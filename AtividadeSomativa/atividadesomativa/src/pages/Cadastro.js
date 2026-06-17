@@ -35,7 +35,6 @@ export default function Cadastro() {
 
       setMensagem('Usuário cadastrado com sucesso!');
 
-      // Limpa campos
       setNome('');
       setSobrenome('');
       setEmail('');
@@ -47,7 +46,7 @@ export default function Cadastro() {
       }, 2000);
 
     } catch (error) {
-      setErro(error.message);
+      setErro('Erro ao cadastrar usuário. Verifique os dados e tente novamente.');
     }
   }
 
